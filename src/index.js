@@ -17,6 +17,4 @@ app.use(require('./routes/'));
 app.use(express.static(path.join(__dirname, 'public')))
 
 // listening the server
-app.listen(app.get('port'), () => {
-    console.log('Listen on port', app.get('port'));
-});
+app.listen(process.env.PORT || 3000);
