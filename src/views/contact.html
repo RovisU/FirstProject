@@ -3,14 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>FOGAWEBSITE</title>
-    <%- include ('partials/head.html') %>
+    <%- include
+        ('partials/head.html')
+        %>
 </head>
 
 <body>
-    <%- include ('partials/navigation.html') %>
+    <%- include
+        ('partials/navigation.html')
+        %>
 
         <div class="container p-5">
             <div class="row">
@@ -22,10 +28,17 @@
                         <div class="card-body">
                             <form action="">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Email">
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholdername="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <textarea class="form-control"
+                                        placeholdername=""
+                                        id=""
+                                        cols="30"
+                                        rows="10"
+                                        placeholder="Message"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-block">
@@ -38,8 +51,14 @@
                 </div>
             </div>
         </div>
-
-        <%- include ('partials/footer.html') %>
+        <a href="https://api.whatsapp.com/send?phone=51961683570&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+            class="float"
+            target="_blank">
+            <i class="fab fa-whatsapp my-float"></i>
+        </a>
+        <%- include
+            ('partials/footer.html')
+            %>
 </body>
 
 </html>
