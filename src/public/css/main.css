@@ -1,5 +1,6 @@
 body {
   background: #ce8f65;
+  background-image: url("../img/pattern-diagonal.png");
   font-family: 'Lato', sans-serif;  
 }
 
@@ -44,8 +45,8 @@ header img {
 }
 
 .headerBackground {
-  background-image: url("../img/headerPattern.png");
-  background-size: 200px;
+  /* background-image: url("../img/pattern-diagonal.png"); */
+  background-size: 20px;
   /* opacity: 0.5; */
 }
 
@@ -505,7 +506,7 @@ transition: all 250ms ease-in-out 0s;
 /* JUMBOTRON */
 
 .jumbo-picture {
-  background-image: url(https://static.pexels.com/photos/169524/pexels-photo-169524.jpeg);
+  background-image: url(../img/telecomunicaciones.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -517,6 +518,22 @@ transition: all 250ms ease-in-out 0s;
 
 .jumbo-picture > p {
   color: white;
+}
+
+.jumbo-telecomunicaciones {
+  background-image: url(../img/telecomunicaciones.jpg);
+}
+.jumbo-catering {
+  background-image: url(../img/catering.jpg);
+}
+.jumbo-licitaciones {
+  background-image: url(../img/licitacion.jpg);
+}
+.jumbo-confeccion {
+  background-image: url(../img/confeccion.jpg);
+}
+.jumbo-distribucion {
+  background-image: url(../img/distribucion.jpg);
 }
 
 /* FACEBOOKICON */

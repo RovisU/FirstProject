@@ -7,7 +7,7 @@
     content="IE=edge" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0" />
-  <title>First node page</title>
+  <title>Servicios Generales FOGA</title>
   <%- include
     ('partials/head.html')
     %>
@@ -15,12 +15,13 @@
 </head>
 
 <body>
+
   <!-- HEADER -->
   <%- include
     ('partials/navigation.html')
     %>
 
-    <!-- SHOWCASE SLIDER -->
+    <!-- SLIDER -->
     <section id="showcase">
       <div id="myCarousel"
         class="carousel slide"
@@ -38,12 +39,16 @@
           <div class="carousel-item carousel-image-1 active">
             <div class="container">
               <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                <h1 class="display-3 carousel-text">Servicios Generales</h1>
-                <p class="lead carousel-text">
+                <h1 class="display-3 carousel-text animate__animated animate__fadeInLeft"">Servicios Generales</h1>
+                <p class="
+                  lead
+                  carousel-text
+                  animate__animated
+                  animate__fadeInRight">
                   Inversiones FOGA E.I.R.L
-                </p>
-                <a href="/7_maravillas"
-                  class="btn btn-mod btn-border btn-large carousel-text">Más...</a>
+                  </p>
+                  <a href="/#nosotros"
+                    class="btn btn-mod btn-border btn-large carousel-text animate__animated animate__fadeInUp">Más...</a>
               </div>
             </div>
           </div>
@@ -55,7 +60,7 @@
                 <p class="lead carousel-text">
                   La excelencia de nuestros servicios es nuestra mejor carta de presentación
                 </p>
-                <a href="/historia_accoyanca"
+                <a href="/#gallery"
                   class="btn btn-mod btn-border btn-large carousel-text">Más...</a>
               </div>
             </div>
@@ -89,21 +94,11 @@
       </div>
     </section>
 
+    <!-- OUR SERVICES -->
 
-    <!-- <div class="container">
-      <header class="row">
-        <div class="col-lg-12 text-center">
-          <img src="/img/pews-logo.png" class="animate__animated animate__bounceIn" alt="Pews Logo">
-        </div>
-      </header>
-    </div> -->
-
-
-
-    <!-- Topic Cards -->
     <div id="cards_landscape_wrap-2">
-      <h1 class="display-4 text-center pt-5">Nuestros Servicios</h1>
-      <div class="container">
+      <h1 class="display-4 text-center pt-5 animate__animated animate__fadeInUp">Nuestros Servicios</h1>
+      <div class="container animate__animated animate__fadeInUp">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <a href="/telecomunicaciones">
@@ -190,10 +185,11 @@
       </div>
     </div>
 
+
     <!-- ABOUT US -->
 
     <div id="nosotros"
-      class="about-section">
+      class="about-section animate__animated animate__fadeInLeft">
       <div class="inner-container">
         <h1 class="display-4 text-left pt-5">¿Quiénes Somos?</h1>
         <p class="text text-white">Inversiones FOGA E.I.R.L., es una empresa emergente que pone a su disposición una amplia variedad de servicios generales y profesionales. Contamos con personal técnico especializado y altamente capacitado que destaca por sus cualidades tanto personales como profesionales para afrontar los retos presentes y futuros.
@@ -383,6 +379,8 @@
       ('partials/footer.html')
       %>
 
+
+      <!-- JS SCRIPTS -->
       <script>
         function validateForm() {
           var n = document.getElementById('name').value;
@@ -442,6 +440,7 @@
 
         }
 
+        //Carousel
         $(".carousel").carousel({
           interval: 5000,
           pause: "hover"
