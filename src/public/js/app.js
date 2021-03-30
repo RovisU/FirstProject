@@ -3,7 +3,7 @@ function validateForm() {
           var e = document.getElementById('email').value;
           var s = document.getElementById('subject').value;
           var m = document.getElementById('message').value;
-          var onlyLetters = /^[a-zA-Z\s]*$/;
+          var onlyLetters = /^`´[a-zA-Z\s]*$/;
           var onlyEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
@@ -86,6 +86,10 @@ contactForm.addEventListener('submit', (e) => {
                 email.value = '';
                 subject.value = '';
                 message.value = '';
+                document.getElementById('nameLabel').innerHTML = ('');
+                document.getElementById('emailLabel').innerHTML = ('');
+                document.getElementById('subjectLabel').innerHTML = ('');
+                document.getElementById('messageLabel').innerHTML = ('');
             } else {
                 alert('Oops!, algo salio mal...')
             }
