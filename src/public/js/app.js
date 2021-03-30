@@ -3,7 +3,7 @@ function validateForm() {
           var e = document.getElementById('email').value;
           var s = document.getElementById('subject').value;
           var m = document.getElementById('message').value;
-          var onlyLetters = /^`´[a-zA-Z\s]*$/;
+          var onlyLetters = /^([a-z ñáéíóú]{2,60})$/i;
           var onlyEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
@@ -38,11 +38,11 @@ function validateForm() {
             return false;
           }
 
-          if (!s.match(onlyLetters)) {
-            document.getElementById('subjectLabel').innerHTML = ('Por favor, ingresa solo letras');
-            document.getElementById('subject').style.borderColor = "red";
-            return false;
-          }
+        //   if (!s.match(onlyLetters)) {
+        //     document.getElementById('subjectLabel').innerHTML = ('Por favor, ingresa solo letras');
+        //     document.getElementById('subject').style.borderColor = "red";
+        //     return false;
+        //   }
 
           if (m == "" || m == null) {
             document.getElementById('messageLabel').innerHTML = ('Por favor, ingresa un mensaje');
